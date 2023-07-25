@@ -1,0 +1,151 @@
+*
+{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html
+{
+    scroll-behavior: smooth;
+    height: 100%;
+}
+
+@font-face {
+    font-family: "vcr";
+    src: url(VCR_OSD_MONO_1.001.ttf);
+}
+
+body
+{
+    /* background-color: rgb(29, 27, 27); */
+    background-image: url(bg-fundo1.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    height: 100%;
+    overflow:hidden ;
+    font-family: "vcr";
+}
+
+header
+{
+    color: aliceblue;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+main
+{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    height: 100%;
+}
+
+.selecao-personagem 
+{
+    border-right: 1px solid aliceblue;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.selecao-personagem h1
+{
+    color: white;
+    border-bottom: 2px solid aqua;
+}
+
+.btn-retorno
+{
+    margin-top: 5%;
+    font-size: 1.5rem;
+    padding: 10px;
+    font-family: "vcr";
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.btn-retorno:hover
+{
+    box-shadow: 0px 0px 10px 0px aqua;
+}
+
+.container-p
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 1.5rem;
+    
+}
+
+.personagens
+{
+    width: 150px;
+    height: 200px;
+    box-shadow: 0px 0px 10px 0px aqua;
+    transition: 1.5s;
+    cursor: pointer;
+}
+
+.personagens:hover
+{
+    transform: scale(1.2);
+}
+
+.descricao
+{
+    width: 50%;
+    text-align: center;
+    color: aliceblue;
+}
+
+.descricao h1
+{
+ color:aliceblue ;
+}
+
+.tp
+{
+    padding: 0px 50px;
+}
+
+.img-d
+{
+    width: 400px;
+    height: 500px;
+}
+
+@media screen and (max-width: 1030px)
+{
+body
+{
+    overflow: auto;
+}
+
+main
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.selecao-personagem
+{
+    width: 100%;
+    border: none;
+}
+
+.descricao
+{
+    width: 100%;
+}
+}
